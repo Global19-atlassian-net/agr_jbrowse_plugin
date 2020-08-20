@@ -46,15 +46,9 @@ function (
                       if (!(pair[0] == 'addBookmarks' || !pair[0] == 'highlight')) {
                           params.push(vars[i]);
                       } 
-                      else {
-                          console.log(pair[0]);
-                      }
 	          }
                   var allparams = params.join(';');
-                  console.log(allparams);
-                  console.log(window.location.pathname);
-                  console.log(window.location.pathname+'?'+allparams);
-                  //window.location.assign(window.location.pathname+'?'+allparams);
+                  window.location.assign(window.location.pathname+'?'+allparams);
               };
 
         var removeBookmarkButton = new dijitButton({

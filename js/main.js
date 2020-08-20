@@ -27,8 +27,10 @@ function (
                 var myMenu = browser.menuBar;
                 console.log( "bookmark remover plugin starting" );
                 myMenu.appendChild(bookmarkRemover);
+            })
+           } //closes if
 
-          },
+          }, //closes constructor
           
           makeRemoveBookmarkButton: function() {
               var removeBookmark = function() {

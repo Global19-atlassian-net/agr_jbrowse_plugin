@@ -48,6 +48,7 @@ function (
                       } 
 	          }
                   var allparams = params.join(';');
+            console.log(window.location.pathname+'?'+allparams);
                   window.location.assign(window.location.pathname+'?'+allparams);
               };
 

@@ -1,9 +1,11 @@
 define([
     'dojo/_base/declare',
+    'dijit/form/Button',
     'JBrowse/Plugin'
 ],
 function (
     declare,
+    dijitButton,
     JBrowsePlugin
 ) {
     return declare(JBrowsePlugin, {

@@ -43,13 +43,10 @@ function (
 	          var vars = query.split('&');
 	          for (var i = 0; i < vars.length; i++) {
 		      var pair = vars[i].split('=');
-                      console.log(pair);
-                      console.log(pair[0]);
-                      console.log(pair[0].values);
-                      if (pair[0].values == 'addBookmarks') {
+                      if (pair[0] == 'addBookmarks' || pair[0] == 'highlight') {
                           next;
                       }
-		      params.push(vars);
+		      params.push(vars[i]);;
 	          }
                   var allparams = params.join(';');
                   console.log(allparams);

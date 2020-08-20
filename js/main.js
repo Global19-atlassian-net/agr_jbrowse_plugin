@@ -45,9 +45,8 @@ function (
                       }
 		      params.push(vars);
 	          }
-
-
-
+                  var allparams = params.join('&');
+                  window.location.assign(window.location.pathname+'?'+allparams);
               }
 
         var removeBookmarkButton = new dijitButton({

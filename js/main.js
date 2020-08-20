@@ -44,7 +44,7 @@ function (
 	          for (var i = 0; i < vars.length; i++) {
 		      var pair = vars[i].split('=');
                       console.log(pair);
-                      console.log(pair[0]));
+                      console.log(pair[0]);
                       console.log(pair[0].values);
                       if (pair[0].values == 'addBookmarks') {
                           next;

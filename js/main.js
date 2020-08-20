@@ -28,7 +28,6 @@ function (
                 console.log( "bookmark remover plugin starting" );
                 myMenu.appendChild(bookmarkRemover);
 
-            });
           },
           
           makeRemoveBookmarkButton: function() {
@@ -47,7 +46,7 @@ function (
 	          }
                   var allparams = params.join('&');
                   window.location.assign(window.location.pathname+'?'+allparams);
-              }
+              };
 
         var removeBookmarkButton = new dijitButton({
                 className :"remover-button",

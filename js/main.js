@@ -64,6 +64,5 @@ function (
         return removeBookmarkButton.domNode;
     }
 
-        }
-    });
+});
 });

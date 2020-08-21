@@ -47,8 +47,7 @@ function (
                           params.push(vars[i]);
                       } 
 	          }
-                  var allparams = params.join(';');
-            alert(window.location.pathname+'?'+allparams);
+                  var allparams = params.join('&');
                   window.location.assign(window.location.pathname+'?'+allparams);
               };
 
